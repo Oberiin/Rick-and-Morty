@@ -1,23 +1,9 @@
 import { useEffect, useState } from "react";
+import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import axios from "axios";
 import "./App.css";
-import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 function App() {
-  return (
-    <Router>
-      <div className="App"></div>
-
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </Router>
-  );
-}
-
-const Home = () => {
   const [characters, setCharacters] = useState([]);
   const [query, setQuery] = useState("");
 
@@ -40,14 +26,14 @@ const Home = () => {
   return (
     <>
       <figure>
-        <Link
-          to="https://www.imdb.com/title/tt2861424/"
+        <a
+          href="https://www.imdb.com/title/tt2861424/"
           target="_blank"
           rel="noreferrer"
           className="link"
         >
           <img src="images/logo.png" alt="Rick & Morty logo" className="logo" />
-        </Link>
+        </a>
       </figure>
 
       <div className="search">
@@ -83,6 +69,6 @@ const Home = () => {
       </div>
     </>
   );
-};
+}
 
 export default App;
