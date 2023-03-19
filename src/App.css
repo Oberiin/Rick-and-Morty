@@ -1,0 +1,129 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1020px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+figure img{
+    display: block;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    margin: 86px auto 0;
+    cursor: pointer;
+    transition: transform 0.4s ease-out;
+   
+}
+figure img:hover{
+    transform: scaleX(1.1);
+}
+
+.link {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.search{
+    padding: 16px 0;
+    border-radius: 8px;
+    margin: 16px auto 33px;
+
+}
+.search input{
+    position: relative;
+    width: 1020px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    max-height: 56px; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+}
+.search-icon{
+    position: absolute;
+    top: 338px;
+    left: 264px;
+    z-index: 20;
+    color: inherit;
+}
+.search-person{
+    position: absolute;
+    top: 338px;
+    right: 270px;
+    z-index: 20;
+    color: inherit;
+}
+
+
+.cards{
+    margin: auto auto;
+    max-width: 100%;
+    
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 20px;
+
+}
+
+
+.card img{
+    max-width: 237px;
+    outline: none;
+}
+
+
+.content div{
+    position: relative;
+    z-index: 10;
+    min-width: inherit;
+    left: inherit;
+    bottom: 5px;
+    background-color: inherit;
+    padding: 1px 16px;
+
+
+} 
+.avatar{
+    border: 1.5px solid rgba(0, 0, 0, 0.34);
+    border-radius: 8px 8px 4px 4px;
+}
+.avatar:hover{
+    cursor: pointer;
+    transform: scaleY(1.035) scaleX(1.02);
+}
+
+/* регулює відстань між картками  */
+div.content{
+    height: 50%;
+}
+.name{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 0.15px;
+    line-height: 30px;
+}
+.species{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+
+} 
